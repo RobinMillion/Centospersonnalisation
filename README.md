@@ -13,13 +13,13 @@ Installez un système CentOS 7 minimal
 
 Créez un utilisateur non root avec les privilèges d'administrateurs
 
-Installez Git : 'sudo yum install git'
+Installez Git : '''sudo yum install git'''
 
-Récupérez le script : 'git clone https://gitlab.com/kikinovak/centos-7.git'
+Récupérez le script : '''git clone https://gitlab.com/kikinovak/centos-7.git'''
 
-Allez dans le nouveau répertoire : 'cd centos-7'
+Allez dans le nouveau répertoire : '''cd centos-7'''
 
-Lancez le scipr : 'sudo ./centos-setup.sh --setup'
+Lancez le scipr : '''sudo ./centos-setup.sh --setup'''
 
 Allez prendre un café pendant que le script tourne
 
@@ -51,44 +51,44 @@ Le script centos-setup.sh effectue toutes ces opérations.
 
 Configurez Bash et Vim et définissez une résolution plus lisible de la console :
 
- './centos-setup.sh --shell'
+ '''./centos-setup.sh --shell'''
 
 Configurer les dépôts officiels et les dépôts de tiers :
 
- './centos-setup.sh --repos'
+ '''./centos-setup.sh --repos'''
 
 Installez les groupes de paquets Core et Base avec quelques outils supplémentaires :
 
- './centos-setup.sh --extra'
+ '''./centos-setup.sh --extra'''
 
 Retirez un florilège de paquets inutiles :
 
- './centos-setup.sh --prune'
+ '''./centos-setup.sh --prune'''
 
 Permettre à l'utilisateur administrateur d'accéder au système de journaux :
 
- './centos-setup.sh --logs'
+ '''./centos-setup.sh --logs'''
 
 Désactivez l'IPv6 et reconfigurez les services de base en adéquation :
 
- './centos-setup.sh --ipv4'
+ '''./centos-setup.sh --ipv4'''
 
 Configurez la persistance du mot de passe pour sudo :
 
- './centos-setup.sh --sudo'
+ '''./centos-setup.sh --sudo'''
 
 Réalisez tout cela en une seule commande :
 
- './centos-setup.sh --setup'
+ '''./centos-setup.sh --setup'''
 
 Supprimez les paquets et revenez à un système de base amélioré :
 
- './centos-setup.sh --strip'
+ '''./centos-setup.sh --strip'''
 
 Afficher le message d'aide :
 
- './centos-setup.sh --help'
+ '''./centos-setup.sh --help'''
 
 Si vous voulez savoir ce qui se passe exactement sous le capot, ouvrez un deuxième terminal et de consulter les journaux :
 
-'$ tail -f /tmp/centos-setup.log'
+'''$ tail -f /tmp/centos-setup.log'''
